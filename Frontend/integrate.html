@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="	https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Integration</title>
+    <style>
+        body{
+          background-color: #C7D0D5;
+        }
+        .btn{
+          background-color: grey;
+        }
+        #Project_name{
+            font-size: 30px;
+            
+        }
+        .navnav{
+            height: 110px;
+        }
+        
+        .ul1{
+            margin: auto;
+        }
+        .navbar-brand {
+          color: aliceblue;
+        }
+        .navbar{
+          background-color: #18122B;
+        }
+        .nav-link{
+            font-size: 20px ;
+        }
+        .row_of_services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+
+        }
+        .column_of_services{
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            margin: 10px;
+            flex-direction: column;
+
+        }
+        .card{
+            margin: 15px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg  navnav ">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="Project_name" href="/integrate.html">Integration Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index2.html">AWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="Type and Ask any thing"
+                            placeholder="Type and Ask any thing" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Ask</button>
+                    </form>
+                </div> -->
+            </div>
+        </nav>
+    </div>
+
+    <div class="main_body">
+        <div class="row_of_services">
+            <div class="column_of_services">
+              <div class="card text-center">
+                <div class="card-header">
+                  <img src="aws.png" alt="" height="125px" width="150px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">AWS Services</h5>
+                  <p class="card-text">Easy to use AWS services with a click</p>
+                  <a href="/aws.html" class="btn btn-primary">Use AWS</a>
+
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <img src="docker.png" alt="" height="130px" width="150px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">CAAS</h5>
+                  <p class="card-text">Easy to use Container As A Service</p>
+                  <a href="/docker.html" class="btn btn-primary">Use Docker</a>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <img src="hadoop.png" alt="" height="150px" width="250px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Setup Hadoop Cluster</h5>
+                  <p class="card-text">Get your ready to use client</p>
+                  <a href="/hadoop.html" class="btn btn-primary">Use Hadoop</a>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <img src="openai.png" alt="" height="130px" width="150px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Get your Code</h5>
+                  <p class="card-text">Get your python code just by entering your problem statement</p>
+                  <a href="/genai.html" class="btn btn-primary">Use GenAI</a>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <img src="jenkins.png" alt="" height="130px" width="150px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Setup Pipeline</h5>
+                  <p class="card-text">Easily setup your pipeline with just few clicks</p>
+                  <a href="http://13.233.46.196:8080/job/docker/build?token=ketan123" target="_blank" class="btn btn-primary">Use Jenkins</a>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                  <img src="python.png" alt="" height="125px" width="160px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Get Python Services</h5>
+                  <p class="card-text">Use some of our python services to solve your problem</p>
+                  <a href="/python.html" class="btn btn-primary">Use python services</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <!-- <div class="container">
+        <center><h1 class="heading" style="color: white;">Find Your Emotion</h1></center></center>
+         </div>
+         <center> <div class="imginput">
+         <form enctype="multipart/form-data", action = "http://52.66.249.24/cgi-bin/file.py" method = "PUT">
+         <form enctype="multipart/form-data">
+         <input  type="file", name="image" , onchange="loadFile(event)" > 
+         <br /> <br/>
+         <input class="form-submit-button" , type="submit", value="Upload">
+          </form>
+          </div> -->
+
+ 
+
+
+
+    <!-- <form enctype = "multipart/form-data" action = "http://52.66.249.24/cgi-bin/file.py" method = "post">
+   <p>File: <input type = "file" name = "filename" /></p>
+   <p><input type = "submit" value = "Upload" /></p>
+   </form>
+    <input type="file" id="fileInput">
+  <button id="uploadButton">upload</button> -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
